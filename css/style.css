@@ -1,0 +1,386 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =========================
+   COMMON
+========================= */
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+.subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #222;
+    color: #fff;
+    border: 2px solid #222;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #222;
+}
+
+.btn-secondary {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #222;
+    color: #fff;
+    border: 2px solid #222;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: transparent;
+    /* color: #222; */
+    border-color: #fff;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo span {
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b47b35;
+}
+
+/* =========================
+   HOME HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80")
+        center / cover;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 72px);
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.subtitle) {
+    max-width: 600px;
+    font-size: 18px;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    padding: 90px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 35px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+}
+
+/* =========================
+   PAGE BANNER
+========================= */
+
+.page-banner {
+    padding: 100px 0;
+    background: #f4f1eb;
+}
+
+.page-banner h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.page-banner p:last-child {
+    max-width: 600px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    padding: 100px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-image {
+    min-height: 450px;
+}
+
+.image-placeholder {
+    height: 100%;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+        ),
+        url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=80")
+        center / cover;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.about-content h2,
+.contact-info h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    padding: 100px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.contact-item {
+    margin-top: 25px;
+}
+
+.contact-item p {
+    color: #666;
+}
+
+.contact-form {
+    padding: 35px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font: inherit;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #222;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 30px;
+    text-align: center;
+    background: #222;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 18px 0;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .feature-grid,
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features,
+    .about-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .page-banner {
+        padding: 70px 0;
+    }
+
+    .page-banner h1 {
+        font-size: 42px;
+    }
+
+    .about-content h2,
+    .contact-info h2 {
+        font-size: 34px;
+    }
+}
