@@ -68,7 +68,7 @@ h3 {
     color: #222;
 }
 
-.btn-secondary {
+.btn-primary {
     display: inline-block;
     margin-top: 25px;
     padding: 13px 28px;
@@ -79,7 +79,7 @@ h3 {
     transition: all 0.3s ease;
 }
 
-.btn-secondary:hover {
+.btn-primary:hover {
     background: transparent;
     /* color: #222; */
     border-color: #fff;
